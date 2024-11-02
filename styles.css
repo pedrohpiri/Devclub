@@ -94,3 +94,41 @@ p {
     color: #4CAF50; /* Uma cor diferente para o preço com desconto */
 }
 
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    .container-button {
+        gap: 10px;
+    }
+
+    button {
+        width: 100px;
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #totalPrice, #discountedPrice {
+        font-size: 1.3em;
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    .container-button {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+    
+    #totalPrice, #discountedPrice {
+        font-size: 1.2em;
+    }
+}
